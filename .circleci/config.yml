@@ -19,7 +19,7 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-            deploy:
+  deploy:
     docker:
       - image: buildpack-deps:trusty
     steps:
